@@ -55,7 +55,7 @@ export function Container() {
       <div className="flex gap-4 p-2">
         <ul
           ref={todoList}
-          className="border-2 border-slate-100 p-2 w-[18rem] h-[30rem] rounded-md shadow-md"
+          className="border-2 border-slate-100 p-2 w-[18rem] h-[25rem] overflow-hidden overflow-y-auto rounded-md shadow-md "
         >
           {todos.map((todo) => (
             <li
@@ -71,7 +71,7 @@ export function Container() {
         </ul>
         <ul
           ref={doneList}
-          className="border-2 border-slate-100 p-2 w-[18rem] h-[30rem] rounded-md shadow-md"
+          className="border-2 border-slate-100 p-2 w-[18rem] h-[25rem] overflow-hidden overflow-y-auto rounded-md shadow-md overflow-hidden scroll-auto"
         >
           {dones.map((done) => (
             <li
@@ -87,7 +87,7 @@ export function Container() {
         </ul>
         <ul
           ref={pendingList}
-          className="border-2 border-slate-100 p-2 w-[18rem] h-[30rem] rounded-md shadow-md"
+          className="border-2 border-slate-100 p-2 w-[18rem] h-[25rem] overflow-hidden overflow-y-auto rounded-md shadow-md overflow-hidden scroll-auto"
         >
           {pending.map((pending) => (
             <li
@@ -103,7 +103,7 @@ export function Container() {
         </ul>
         <ul
           ref={extraList}
-          className="border-2 border-slate-100 p-2 w-[18rem] h-[30rem] rounded-md shadow-md"
+          className="border-2 border-slate-100 p-2 w-[18rem] h-[25rem] overflow-hidden overflow-y-auto rounded-md shadow-md overflow-hidden scroll-auto"
         >
           {extra.map((extra) => (
             <li
